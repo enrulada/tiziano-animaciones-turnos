@@ -1,0 +1,639 @@
+/* =====================================================
+   TARJETA GENERAL DE CONFIRMACIÓN
+===================================================== */
+
+.confirmacion-animation {
+  position: relative;
+
+  width: min(360px, 90vw);
+  min-height: 420px;
+
+  padding: 36px 28px 34px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  color: #f8eeee;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(201, 139, 144, 0.22),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      #1a0f12 0%,
+      #3b1f26 55%,
+      #1a0f12 100%
+    );
+
+  border: 1px solid rgba(247, 198, 203, 0.2);
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+
+/* =====================================================
+   PELUQUERÍA - TIJERAS SVG
+===================================================== */
+
+.scissors-svg-container {
+  position: relative;
+  z-index: 2;
+
+  width: 165px;
+  height: 165px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 5px;
+
+  filter:
+    drop-shadow(0 10px 15px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 0 22px rgba(247, 198, 203, 0.18));
+}
+
+.scissors-svg {
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   PELUQUERÍA - DESTELLOS
+===================================================== */
+
+.sparkles {
+  position: absolute;
+
+  width: 230px;
+  height: 190px;
+
+  top: 55px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: 3;
+}
+
+.sparkles span {
+  position: absolute;
+
+  color: #ffd9d1;
+
+  text-shadow:
+    0 0 8px rgba(255, 217, 209, 0.8),
+    0 0 18px rgba(247, 198, 203, 0.6);
+}
+
+.sparkles span:nth-child(1) {
+  top: 10px;
+  left: 15px;
+
+  font-size: 27px;
+}
+
+.sparkles span:nth-child(2) {
+  top: 65px;
+  right: 5px;
+
+  font-size: 22px;
+}
+
+.sparkles span:nth-child(3) {
+  bottom: 5px;
+  left: 30px;
+
+  font-size: 25px;
+}
+
+
+/* =====================================================
+   MANICURÍA - ESCENA
+===================================================== */
+
+.manicuria-animation {
+  background:
+    radial-gradient(
+      circle at 50% 22%,
+      rgba(255, 217, 209, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 85% 60%,
+      rgba(201, 139, 144, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #1a0f12 0%,
+      #3b1f26 55%,
+      #1a0f12 100%
+    );
+}
+
+.nail-polish-scene {
+  position: relative;
+  z-index: 2;
+
+  width: 200px;
+  height: 190px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: -5px;
+
+  filter:
+    drop-shadow(0 12px 16px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 0 25px rgba(201, 139, 144, 0.15));
+}
+
+.nail-polish-svg {
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+
+/* =====================================================
+   MANICURÍA - DESTELLOS
+===================================================== */
+
+.manicuria-sparkles {
+  position: absolute;
+
+  width: 260px;
+  height: 200px;
+
+  top: 45px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: 4;
+}
+
+.manicuria-sparkles span {
+  position: absolute;
+
+  color: #ffd9d1;
+
+  text-shadow:
+    0 0 8px rgba(255, 217, 209, 0.9),
+    0 0 20px rgba(201, 139, 144, 0.7);
+}
+
+.manicuria-sparkles span:nth-child(1) {
+  top: 15px;
+  left: 20px;
+
+  font-size: 28px;
+}
+
+.manicuria-sparkles span:nth-child(2) {
+  top: 55px;
+  right: 8px;
+
+  font-size: 21px;
+}
+
+.manicuria-sparkles span:nth-child(3) {
+  bottom: 12px;
+  left: 42px;
+
+  font-size: 24px;
+}
+
+
+/* =====================================================
+   CHECK
+===================================================== */
+
+.confirmation-check {
+  position: relative;
+  z-index: 5;
+
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  font-size: 25px;
+  font-weight: 700;
+
+  color: #1a0f12;
+
+  background:
+    linear-gradient(
+      135deg,
+      #c98b90,
+      #ffd9d1
+    );
+
+  box-shadow:
+    0 0 18px rgba(247, 198, 203, 0.45),
+    0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =====================================================
+   TEXTOS
+===================================================== */
+
+.confirmacion-animation h2 {
+  position: relative;
+  z-index: 5;
+
+  margin: 0 0 9px;
+
+  font-size: 27px;
+  font-weight: 700;
+
+  letter-spacing: -0.5px;
+}
+
+.confirmacion-animation p {
+  position: relative;
+  z-index: 5;
+
+  margin: 0;
+
+  color: #f7c6cb;
+
+  font-size: 14px;
+
+  letter-spacing: 0.2px;
+}
+
+
+/* =====================================================
+   LUCES AMBIENTALES
+===================================================== */
+
+.confirmacion-animation::before {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  top: -110px;
+  right: -90px;
+
+  border-radius: 50%;
+
+  background: rgba(201, 139, 144, 0.15);
+
+  filter: blur(25px);
+
+  pointer-events: none;
+}
+
+.confirmacion-animation::after {
+  content: "";
+
+  position: absolute;
+
+  width: 170px;
+  height: 170px;
+
+  bottom: -100px;
+  left: -60px;
+
+  border-radius: 50%;
+
+  background: rgba(109, 58, 69, 0.25);
+
+  filter: blur(30px);
+
+  pointer-events: none;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 480px) {
+  .confirmacion-animation {
+    min-height: 390px;
+
+    padding: 30px 20px;
+  }
+
+  .scissors-svg-container {
+    width: 145px;
+    height: 145px;
+  }
+
+  .nail-polish-scene {
+    width: 180px;
+    height: 175px;
+  }
+
+  .confirmacion-animation h2 {
+    font-size: 24px;
+  }
+}
+/* =========================================================
+   BARBERÍA
+   ========================================================= */
+
+.barberia-animation {
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(201, 139, 144, 0.2),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at 80% 65%,
+      rgba(109, 58, 69, 0.18),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #1a0f12 0%,
+      #3b1f26 55%,
+      #1a0f12 100%
+    );
+}
+
+.barber-pole-scene {
+  position: relative;
+  z-index: 2;
+
+  width: 180px;
+  height: 210px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: -5px;
+
+  filter:
+    drop-shadow(
+      0 12px 18px rgba(0, 0, 0, 0.4)
+    )
+    drop-shadow(
+      0 0 25px rgba(201, 139, 144, 0.18)
+    );
+}
+
+.barber-pole-svg {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+.barber-glow {
+  position: absolute;
+
+  width: 125px;
+  height: 185px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(247, 198, 203, 0.28),
+      rgba(201, 139, 144, 0.08) 45%,
+      transparent 70%
+    );
+
+  filter: blur(15px);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.barberia-sparkles {
+  position: absolute;
+
+  width: 255px;
+  height: 210px;
+
+  top: 42px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: 4;
+}
+
+.barberia-sparkles span {
+  position: absolute;
+
+  color: #ffd9d1;
+
+  text-shadow:
+    0 0 8px rgba(255, 217, 209, 0.9),
+    0 0 20px rgba(201, 139, 144, 0.7);
+}
+
+.barberia-sparkles span:nth-child(1) {
+  top: 18px;
+  left: 15px;
+
+  font-size: 28px;
+}
+
+.barberia-sparkles span:nth-child(2) {
+  top: 80px;
+  right: 5px;
+
+  font-size: 22px;
+}
+
+.barberia-sparkles span:nth-child(3) {
+  bottom: 15px;
+  left: 35px;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   ESTÉTICA
+   ========================================================= */
+
+.estetica-animation {
+  background:
+    radial-gradient(
+      circle at 50% 25%,
+      rgba(255, 217, 209, 0.18),
+      transparent 36%
+    ),
+    radial-gradient(
+      circle at 20% 65%,
+      rgba(201, 139, 144, 0.12),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #1a0f12 0%,
+      #3b1f26 55%,
+      #1a0f12 100%
+    );
+}
+
+.estetica-scene {
+  position: relative;
+
+  z-index: 2;
+
+  width: 190px;
+  height: 195px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: -5px;
+
+  filter:
+    drop-shadow(
+      0 10px 18px rgba(0, 0, 0, 0.35)
+    )
+    drop-shadow(
+      0 0 25px rgba(247, 198, 203, 0.16)
+    );
+}
+
+.estetica-svg {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: visible;
+}
+
+.estetica-halo {
+  position: absolute;
+
+  width: 175px;
+  height: 175px;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 217, 209, 0.2),
+      rgba(201, 139, 144, 0.08) 45%,
+      transparent 72%
+    );
+
+  filter: blur(14px);
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.estetica-sparkles {
+  position: absolute;
+
+  width: 260px;
+  height: 210px;
+
+  top: 45px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+
+  z-index: 4;
+}
+
+.estetica-sparkles span {
+  position: absolute;
+
+  color: #ffd9d1;
+
+  text-shadow:
+    0 0 8px rgba(255, 217, 209, 0.9),
+    0 0 20px rgba(201, 139, 144, 0.7);
+}
+
+.estetica-sparkles span:nth-child(1) {
+  top: 10px;
+  left: 20px;
+
+  font-size: 28px;
+}
+
+.estetica-sparkles span:nth-child(2) {
+  top: 65px;
+  right: 5px;
+
+  font-size: 22px;
+}
+
+.estetica-sparkles span:nth-child(3) {
+  bottom: 15px;
+  left: 45px;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   RESPONSIVE BARBERÍA + ESTÉTICA
+   ========================================================= */
+
+@media (max-width: 480px) {
+  .barber-pole-scene {
+    width: 160px;
+    height: 190px;
+  }
+
+  .estetica-scene {
+    width: 170px;
+    height: 180px;
+  }
+}

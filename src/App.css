@@ -1,0 +1,545 @@
+#root {
+  min-height: 100vh;
+}
+
+/* =====================================================
+   PÁGINA GENERAL
+===================================================== */
+
+.demo-page {
+  min-height: 100vh;
+  padding: 38px 20px 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(109, 58, 69, 0.35),
+      transparent 35%
+    ),
+    #10090b;
+
+  color: #f8eeee;
+}
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
+
+.demo-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.demo-brand {
+  color: #c98b90;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 4px;
+}
+
+.demo-header h1 {
+  margin: 8px 0 5px;
+
+  font-size: clamp(28px, 5vw, 42px);
+}
+
+.demo-header p {
+  margin: 0;
+
+  color: #c9b5b8;
+
+  font-size: 14px;
+}
+
+/* =====================================================
+   SELECTOR DE SERVICIOS
+===================================================== */
+
+.service-selector {
+  width: min(390px, 92vw);
+
+  padding: 34px 28px;
+
+  border-radius: 28px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(201, 139, 144, 0.12),
+      transparent 40%
+    ),
+    linear-gradient(
+      145deg,
+      #1a0f12,
+      #321a20
+    );
+
+  border: 1px solid rgba(247, 198, 203, 0.16);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.selector-label {
+  color: #c98b90;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.service-selector h2 {
+  margin: 8px 0 7px;
+
+  font-size: 26px;
+}
+
+.selector-description {
+  margin: 0 auto 26px;
+
+  max-width: 290px;
+
+  color: #bda8ac;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.service-options {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.service-button {
+  width: 100%;
+
+  padding: 16px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  border-radius: 17px;
+
+  border: 1px solid rgba(247, 198, 203, 0.12);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  color: #f8eeee;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease;
+}
+
+.service-button:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(247, 198, 203, 0.35);
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 139, 144, 0.15),
+      rgba(109, 58, 69, 0.12)
+    );
+
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.22);
+}
+
+.service-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(201, 139, 144, 0.2),
+      rgba(109, 58, 69, 0.25)
+    );
+
+  font-size: 26px;
+}
+
+.service-text {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.service-text strong {
+  font-size: 15px;
+}
+
+.service-text small {
+  color: #ad9297;
+
+  font-size: 12px;
+}
+
+.service-arrow {
+  color: #c98b90;
+
+  font-size: 30px;
+  font-weight: 300;
+
+  line-height: 1;
+}
+
+/* =====================================================
+   TARJETA DEL TURNO
+===================================================== */
+
+.turno-card,
+.procesando-card {
+  width: min(360px, 90vw);
+
+  padding: 35px 28px;
+
+  border-radius: 26px;
+
+  text-align: center;
+
+  background:
+    linear-gradient(
+      145deg,
+      #1a0f12,
+      #321a20
+    );
+
+  border: 1px solid rgba(247, 198, 203, 0.16);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.turno-icon {
+  margin-bottom: 12px;
+
+  font-size: 55px;
+}
+
+.turno-label {
+  color: #c98b90;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.turno-card h2 {
+  margin: 8px 0 25px;
+
+  font-size: 25px;
+}
+
+.turno-data {
+  margin-bottom: 25px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr
+    1fr;
+
+  gap: 10px;
+}
+
+.turno-data div {
+  padding: 14px 8px;
+
+  border-radius: 14px;
+
+  background:
+    rgba(255, 255, 255, 0.045);
+}
+
+.turno-data span,
+.turno-data strong {
+  display: block;
+}
+
+.turno-data span {
+  margin-bottom: 5px;
+
+  color: #ad9297;
+
+  font-size: 11px;
+}
+
+.turno-data strong {
+  font-size: 13px;
+}
+
+/* =====================================================
+   BOTÓN CONFIRMAR
+===================================================== */
+
+.confirmar-button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: 0;
+  border-radius: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6d3a45,
+      #c98b90
+    );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 25px rgba(201, 139, 144, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.confirmar-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(201, 139, 144, 0.3);
+}
+
+/* =====================================================
+   VOLVER
+===================================================== */
+
+.volver-button {
+  margin-top: 15px;
+
+  padding: 8px 12px;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #ad9297;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.volver-button:hover {
+  color: #f7c6cb;
+}
+
+/* =====================================================
+   PROCESANDO
+===================================================== */
+
+.procesando-card {
+  min-height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.procesando-card h2 {
+  margin: 20px 0 8px;
+}
+
+.procesando-card p {
+  margin: 0;
+
+  color: #c9b5b8;
+
+  font-size: 13px;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 50%;
+
+  border:
+    3px solid
+    rgba(247, 198, 203, 0.12);
+
+  border-top-color: #f7c6cb;
+
+  animation:
+    spin
+    0.8s
+    linear
+    infinite;
+}
+
+/* =====================================================
+   RESULTADO
+===================================================== */
+
+.resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.resultado-actions {
+  width: min(360px, 90vw);
+
+  display: flex;
+  justify-content: center;
+
+  gap: 10px;
+}
+
+/* =====================================================
+   BOTONES DEL RESULTADO
+===================================================== */
+
+.repetir-button,
+.cambiar-button {
+  padding: 10px 17px;
+
+  border-radius: 12px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.repetir-button {
+  border:
+    1px solid
+    rgba(247, 198, 203, 0.25);
+
+  background: transparent;
+
+  color: #f7c6cb;
+}
+
+.cambiar-button {
+  border:
+    1px solid
+    rgba(201, 139, 144, 0.35);
+
+  background:
+    rgba(109, 58, 69, 0.25);
+
+  color: #ffd9d1;
+}
+
+.repetir-button:hover,
+.cambiar-button:hover {
+  transform: translateY(-2px);
+}
+
+.repetir-button:hover {
+  background:
+    rgba(247, 198, 203, 0.06);
+
+  border-color:
+    rgba(247, 198, 203, 0.45);
+}
+
+.cambiar-button:hover {
+  background:
+    rgba(109, 58, 69, 0.45);
+}
+
+/* =====================================================
+   ANIMACIÓN DEL LOADER
+===================================================== */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 480px) {
+  .demo-page {
+    padding:
+      28px
+      15px
+      45px;
+  }
+
+  .demo-header {
+    margin-bottom: 22px;
+  }
+
+  .demo-header h1 {
+    font-size: 29px;
+  }
+
+  .service-selector {
+    padding: 28px 20px;
+  }
+
+  .resultado-actions {
+    flex-direction: column;
+  }
+
+  .repetir-button,
+  .cambiar-button {
+    width: 100%;
+  }
+}
